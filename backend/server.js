@@ -14,6 +14,7 @@ const corsOptions = {
 };
 const app = express();
 
+app.use(express.static(path.join(__dirname, "../client/build")));
 // Middleware
 app.use(cors({
   origin: [process.env.CLIENT_URL,'http://localhost:3000'],
