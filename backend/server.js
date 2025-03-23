@@ -8,6 +8,10 @@ const { OAuth2Client } = require('google-auth-library');
 const User = require('./models/User');
 const Course = require('./models/Course');
 
+const corsOptions = {
+  origin: "https://mern-freecodecamp-1-o384.onrender.com",
+  credentials: true, 
+};
 const app = express();
 
 // Middleware
